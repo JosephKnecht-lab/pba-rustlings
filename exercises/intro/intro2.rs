@@ -3,10 +3,9 @@
 // by completing the println statement.
 // Execute `rustlings hint intro2` for a hint.
 
-// I AM NOT DONE
 
 fn main() {
-    println!("",
+    println!("{greeting} {adjective} {noun}",
         greeting="Welcome to",
         adjective="the extraordinary",
         noun="Rustlings Polkadot Academy self-assessment!"

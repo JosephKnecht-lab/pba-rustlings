@@ -15,15 +15,23 @@
 mod tests {
     use super::*;
 
+    fn times_two(n: i32) -> i32 {
+        n*2
+    }
+
+    fn double(n: u32) -> u32 {
+        n*2
+    }
+
     #[test]
     fn returns_twice_of_positive_numbers() {
-        assert_eq!(times_two(8), ???);
+        assert_eq!(times_two(8), 16);
     }
 
     #[test]
     fn returns_twice_of_negative_numbers() {
         // TODO replace unimplemented!() with an assert for `times_two(-4)`
-        unimplemented!()
+        assert_eq!(times_two(-4), -8);
     }
 
     // Don't modify this function!

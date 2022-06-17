@@ -5,17 +5,17 @@
 // Then, create an array with at least 100 elements in it where the ??? is.
 // Finally, write tests for both functions.
 
-    fn morning_evening () ->  {
+    fn morning_evening (n:bool) -> String {
 
-        if is_morning {
-            // TODO
+        if n {
+            return "Yes".to_string();
         } else {
-            // TODO
+            return "No".to_string();
         }
     }
 
     fn do_array() {
-        let a = ???
+        let mut a: [i32; 100] = [0; 100];
         if a.len() >= 100 {
             println!("Wow, that's a big array!");
         } else {
@@ -26,6 +26,7 @@
     #[test]
     fn evening_works() {
         // TODO write test here using assert_eq
+        //assert_eq!(morning_evening(true));
     }
     
     #[test]

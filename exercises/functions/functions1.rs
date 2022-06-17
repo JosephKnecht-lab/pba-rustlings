@@ -3,8 +3,6 @@
 // and returns a Vec<u8>.
 // And make the rest compile!
 
-// I AM NOT DONE
-
 struct Block {
     header: u32,
     details: Vec<u8>,
@@ -12,7 +10,8 @@ struct Block {
 
 impl Block { 
     fn get_body() -> Vec<u8> {
-        // TODO 
+        let mut vec = Vec::new();
+        return vec;
     }
 }
 
@@ -24,11 +23,11 @@ fn main() {
 
     let block = Block {
         header: 12345,
-        details: Block::get_body("state root")
+        details: Block::get_body()
     };
 
-    let word = ??? // TODO
-    if is_academy_word() {
+    let word = Block::get_body(); // TODO
+    if is_academy_word("no") {
         println!("That's definitely a Polkadot Academy word!");
     } else {
         println!("That's not a Polkadot Academy word.");
