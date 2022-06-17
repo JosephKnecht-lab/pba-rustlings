@@ -1,16 +1,24 @@
 // event_enums
 // Make me compile! Execute `rustlings hint event_enums` for hints!
 
-// I AM NOT DONE
 
 #[derive(Debug)]
 enum Event {
-    // have a look at the main() function to include the 
-    // appropriate events and types
+    Instantiated(String),
+    Transferred { 
+        to: u32,
+        from: u32,
+        balance: u128 
+    },
+    Terminated
 }
 
 impl Event {
     // add a function that prints the events to the console
+    fn call() {
+        println!();
+    }
+
 }
 
 fn main() {
@@ -21,6 +29,6 @@ fn main() {
     ];
 
     for event in &events {
-        event.call();
+        Event::call();
     }
 }

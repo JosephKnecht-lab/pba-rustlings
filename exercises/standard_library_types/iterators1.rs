@@ -8,12 +8,12 @@
 fn main () {
     let my_fav_things = vec!["runtime", "libraries", "avocado", "substrate", "cryptography"];
 
-    let mut my_iterable_fav_things = ???;
+    let mut my_iterable_fav_things = my_fav_things.iter();
 
-    assert_eq!(my_iterable_fav_things.next(), ???);
-    assert_eq!(my_iterable_fav_things.next(), Some("libraries"));
-    assert_eq!(my_iterable_fav_things.next(), ???);
-    assert_eq!(my_iterable_fav_things.next(), Some("substrate"));
-    assert_eq!(my_iterable_fav_things.next(), Some("cryptography"));
-    assert_eq!(my_iterable_fav_things.next(), ???);
+    assert_eq!(my_iterable_fav_things.next(), Some(&"runtime"));
+    assert_eq!(my_iterable_fav_things.next(), Some(&"libraries"));
+    assert_eq!(my_iterable_fav_things.next(), Some(&"avocado"));
+    assert_eq!(my_iterable_fav_things.next(), Some(&"substrate"));
+    assert_eq!(my_iterable_fav_things.next(), Some(&"cryptography"));
+    assert_eq!(my_iterable_fav_things.next(), None);
 }
