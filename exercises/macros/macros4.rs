@@ -1,8 +1,8 @@
 // macros4.rs
 // Make me compile!
 
-// I AM NOT DONE
 
+#[derive(PartialEq, Debug)]
 enum T {
     Ta,
     Tb,
