@@ -1,6 +1,5 @@
 // Make me compile!
 
-// I AM NOT DONE
 
 mod sausage_factory {
     // Don't let anybody outside of this module see this!
@@ -8,7 +7,7 @@ mod sausage_factory {
         String::from("Ginger")
     }
 
-    fn make_sausage() {
+    pub fn make_sausage() {
         get_secret_recipe();
         println!("sausage!");
     }
@@ -17,8 +16,8 @@ mod sausage_factory {
 mod delicious_snacks {
 
     // TODO: Fix these use statements
-    use self::fruits::PEAR as fruit;
-    use self::veggies::CUCUMBER as veggie;
+    pub use self::fruits::PEAR as fruit;
+    pub use self::veggies::CUCUMBER as veggie;
 
     mod fruits {
         pub const PEAR: &'static str = "Pear";

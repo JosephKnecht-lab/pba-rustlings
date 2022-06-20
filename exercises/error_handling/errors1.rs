@@ -4,9 +4,9 @@
 // construct to `Option` that can be used to express error conditions.
 // Make sure all tests pass.
 
-// I AM NOT DONE
 
-pub fn generate_nametag_text(name: String) -> String {
+
+pub fn generate_nametag_text(name: String) -> Result<String, u32> {
     if name.len() > 0 {
         Ok(format!("Hi! My name is {}", name))
     } else {
